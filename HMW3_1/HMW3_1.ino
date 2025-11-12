@@ -135,7 +135,8 @@ void updateLEDColor(int currentMode) {
       if (fadeBrightness >= 255) {
         fadeBrightness = 255;
         fadeDirection  = -1;
-      } else if (fadeBrightness <= 0) {
+      } 
+      else if (fadeBrightness <= 0) {
         fadeBrightness = 0;
         fadeDirection  = 1;
       }
@@ -245,7 +246,6 @@ int checkButton() {
 
   return clickType;
 }
-
 
 
 // Write RGB values to the LED pins
